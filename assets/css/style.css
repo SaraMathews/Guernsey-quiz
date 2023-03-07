@@ -119,6 +119,17 @@ div>p {
     cursor: pointer;
   }
 
+  /* list style in modal */
+#list {
+text-align: left;
+}
+
+#list > li {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
 /*Quiz area style*/
 #question {
     font-size: 1.7rem;

@@ -1,22 +1,6 @@
-//Open modal when rules btn is clicked
-// Gets id's and classes from the dom
-let modal = document.getElementById("rules-modal");
-let btn = document.getElementById("myBtn");
-let span = document.getElementsByClassName("close")[0];
-
-// Opens the modal when the user clicks the rules btn
-btn.onclick = function () {
-  modal.style.display = "block";
-}
-
-// Closes the modal when user clicks on <span> (x)
-span.onclick = function () {
-  modal.style.display = "none";
-}
-
 // Questions and answers
 let quizQuestions = [{
-  question: "What is the approximate population of Guernsey?",
+  question: "1. What is the approximate population of Guernsey?",
   answers: [{
           text: "68 000",
           correct: true
@@ -32,7 +16,7 @@ let quizQuestions = [{
   ]
 },
 {
-  question: "How many parishes does Guernsey have?",
+  question: "2. How many parishes does Guernsey have?",
   answers: [{
           text: "5",
           correct: false
@@ -48,7 +32,7 @@ let quizQuestions = [{
   ]
 },
 {
-  question: "Do car registrations in Guernsey have...",
+  question: "3. Do car registrations in Guernsey have...",
   answers: [{
           text: "Numbers ans letters",
           correct: false
@@ -64,7 +48,7 @@ let quizQuestions = [{
   ]
 },
 {
-  question: "What did the Romans call Guernsey",
+  question: "4. What did the Romans call Guernsey",
   answers: [{
           text: "Hispania",
           correct: false
@@ -80,7 +64,7 @@ let quizQuestions = [{
   ]
 },
 {
-  question: "What is the capital of Guernsey?",
+  question: "5. What is the capital of Guernsey?",
   answers: [{
           text: "St Anne",
           correct: false
@@ -96,7 +80,7 @@ let quizQuestions = [{
   ]
 },
 {
-  question: "What colour does the post boxes in Guernsey have?",
+  question: "6. What colour does the post boxes in Guernsey have?",
   answers: [{
           text: "Yellow",
           correct: false
@@ -112,7 +96,7 @@ let quizQuestions = [{
   ]
 },
 {
-  question: "Which of the following is a Guernsey airline?",
+  question: "7. Which of the following is a Guernsey airline?",
   answers: [{
           text: "Ryan Air",
           correct: false
@@ -128,7 +112,7 @@ let quizQuestions = [{
   ]
 },
 {
-  question: "What day does Guernsey celebrate Liberation Day?",
+  question: "8. What day does Guernsey celebrate Liberation Day?",
   answers: [{
           text: "9th May",
           correct: true
@@ -158,7 +142,9 @@ displayQuestion();
 // Event listener submit button
 document.getElementById("submit-answ").addEventListener("click", submitAnswer);
 
-// Function to display current question and answers
+/**
+ * Function to display current question and answers
+*/ 
 function displayQuestion() {
 let question = quizQuestions[questionIndex];
 document.getElementById("question").textContent = question.question;
@@ -170,7 +156,9 @@ for (let i = 0; i < question.answers.length; i++) {
 document.getElementById("answers").innerHTML = quizAnswers;
 }
 
-//Function to submit answer and move on to next question
+/**
+ * Function to submit answer, collect score, move on to next question or end quiz
+*/ 
 function submitAnswer() {
   let selectedAnswer = document.querySelector("input[name='answer']:checked");
   if (!selectedAnswer) {
@@ -186,7 +174,6 @@ function submitAnswer() {
     document.getElementById("result");
   }
 
-  //Move on to next question or end quiz if all the questions have been answered
   questionIndex++;
   if (questionIndex >= quizQuestions.length) {
     endQuiz();
@@ -195,7 +182,9 @@ function submitAnswer() {
   }
 }
 
-// Function to end quiz and display final score and comments
+/**
+ * Function display final score and comments
+*/ 
 function endQuiz() {
   document.getElementById("question").textContent = "Congratulations on completing the Guernsey Quiz!";
   document.getElementById("answers").innerHTML = "You scored " + score + " out of " + quizQuestions.length + " questions";
@@ -206,4 +195,20 @@ function endQuiz() {
     document.getElementById("comment").innerHTML = "Oops..better luck next time!";
   }
   document.getElementById("check-answers").style.visibility = "visible";
+}
+
+//Open modal when rules btn is clicked
+// Gets id's and classes from the dom
+let modal = document.getElementById("rules-modal");
+let btn = document.getElementById("myBtn");
+let span = document.getElementsByClassName("close")[0];
+
+// Opens the modal when the user clicks the rules btn
+btn.onclick = function () {
+  modal.style.display = "block";
+}
+
+// Closes the modal when user clicks on <span> (x)
+span.onclick = function () {
+  modal.style.display = "none";
 }
