@@ -82,6 +82,41 @@ div > p {
 }
 
 /* Modal style */
+/* Code from "How To Create a Modal Box" w3schools */
+#rules-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color:#EADCCF;
+    border: #53423C 2px solid;
+    color: #53423C;
+}
+
+#modal-content {
+    background-color:#EADCCF;
+    border: #53423C 2px solid;
+    color: #53423C;
+    margin: 15% auto;
+    padding: 20px;
+}
+
+.close {
+  color: #53423C;
+  float: right;
+  font-size: 1.5rem;
+}
+
+.close:hover,
+.close:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 
 /* Footer */
