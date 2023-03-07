@@ -1,3 +1,19 @@
+//Open modal when rules btn is clicked
+// Gets id's and classes from the dom
+let modal = document.getElementById("rules-modal");
+let btn = document.getElementById("myBtn");
+let span = document.getElementsByClassName("close")[0];
+
+// Opens the modal when the user clicks the rules btn
+btn.onclick = function () {
+  modal.style.display = "block";
+}
+
+// Closes the modal when user clicks on <span> (x)
+span.onclick = function () {
+  modal.style.display = "none";
+}
+
 // Questions and answers
 let quizQuestions = [{
   question: "What is the approximate population of Guernsey?",
@@ -133,6 +149,7 @@ let quizQuestions = [{
 let score = 0;
 let questionIndex = 0;
 
+// Hide Check answers btn
 document.getElementById("check-answers").style.visibility = "hidden";
 
 // Display first question
@@ -189,22 +206,4 @@ function endQuiz() {
     document.getElementById("comment").innerHTML = "Oops..better luck next time!";
   }
   document.getElementById("check-answers").style.visibility = "visible";
-}
-
-
-
-//Open modal when rules btn is clicked
-// Gets id's and classes from the dom
-let modal = document.getElementById("rules-modal");
-let btn = document.getElementById("myBtn");
-let span = document.getElementsByClassName("close")[0];
-
-// Opens the modal when the user clicks the rules btn
-btn.onclick = function () {
-  modal.style.display = "block";
-}
-
-// Closes the modal when user clicks on <span> (x)
-span.onclick = function () {
-  modal.style.display = "none";
 }
