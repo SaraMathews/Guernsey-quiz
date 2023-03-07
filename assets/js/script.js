@@ -1,5 +1,3 @@
-
-
 // Questions and answers
 let quizQuestions = [{
   question: "What is the approximate population of Guernsey?",
@@ -152,6 +150,30 @@ for (let i = 0; i < question.answers.length; i++) {
 }
 document.getElementById("answers").innerHTML = quizAnswers;
 }
+
+//Function to submit answer and move on to next question
+function submitAnswer() {
+  let selectedAnswer = document.querySelector("input[name='answer']:checked");
+  if (!selectedAnswer) {
+    alert("You forgot to choose an answer. Try again!");
+  }
+
+  let answerIndex = parseInt(selectedAnswer.value);
+  let answer = quizQuestions[questionIndex].answers[answerIndex];
+  if (answer.correct) {
+    document.getElementById("result");
+    score++
+  }
+}
+
+
+
+
+
+
+
+
+
 
 
 
