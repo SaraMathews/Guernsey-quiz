@@ -87,16 +87,16 @@ div>p {
 /* Modal style */
 /* Code from "How To Create a Modal Box" w3schools */
 .modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
+    display: none;
+    position: fixed;
+    z-index: 1;
     top: 0;
-    overflow: auto; 
+    overflow: auto;
     width: 750px;
     margin-top: 300px;
-  }
-  
-  .modal-content {
+}
+
+.modal-content {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
@@ -105,27 +105,27 @@ div>p {
     border: #53423C 2px solid;
     color: #53423C;
     height: 300px;
-  }
-  
-  .close {
+}
+
+.close {
     color: #53423C;
     float: right;
     font-size: 30px;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-  }
-
-  /* list style in modal */
-#list {
-text-align: left;
 }
 
-#list > li {
+/* list style in modal */
+#list {
+    text-align: left;
+}
+
+#list>li {
     padding-bottom: 10px;
     padding-top: 10px;
 }
@@ -141,13 +141,24 @@ text-align: left;
 #answers {
     font-size: 1.5rem;
     margin-bottom: 40px;
-    }
+}
 
-    #result, #end-text {
-        font-size: 1.2rem;
-    }
+#result,
+#end-text {
+    font-size: 1.2rem;
+}
 
 /* Check answer list*/
+
+.correct-box {
+    background-color: #53423C;
+    color: white;
+    height: 600px;
+    width: 500px;
+    margin-top: 300px;
+    border-radius: 4px;
+}
+
 #ol {
     font-size: 1.5rem;
     display: inline-block;
@@ -173,7 +184,7 @@ footer {
     bottom: 0;
 }
 
-footer > div > p {
+footer>div>p {
     font-size: 1rem;
 }
 
