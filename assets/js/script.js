@@ -133,6 +133,8 @@ let quizQuestions = [{
 let score = 0;
 let questionIndex = 0;
 
+document.getElementById("check-answers").style.visibility = "hidden";
+
 // Display first question
 displayQuestion();
 
@@ -179,13 +181,14 @@ function submitAnswer() {
 // Function to end quiz and display final score and comments
 function endQuiz() {
   document.getElementById("question").textContent = "Congratulations on completing the Guernsey Quiz!";
-  document.getElementById("answers").innerHTML = "You scored" + score + "out of" + quizQuestions.length + "questions";
-  document.getElementById("submit").style.display = "none";
+  document.getElementById("answers").innerHTML = "You scored " + score + " out of " + quizQuestions.length + " questions";
+  document.getElementById("submit-answ").style.display = "none";
   if (score >= 5) {
     document.getElementById("comment").innerHTML = "Good job, you are a Guernsey expert!";
   } else {
     document.getElementById("comment").innerHTML = "Oops..better luck next time!";
   }
+  document.getElementById("check-answers").style.visibility = "visible";
 }
 
 
