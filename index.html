@@ -23,26 +23,28 @@
     <main>
         <!--Welcome form with rules-->
         <div class="main-box">
-                <h3>Welcome!</h3>
-                <p>This is a small quiz to test your knowledge about Guernsey. <br>Good luck!</p>
-                <!--Code from "How To Create a Modal Box" w3schools-->
-                <button class="submit-btn" id="rules-btn">Rules</button>
-                <div id="rules-modal">
-                    <div id="modal-content">
-                        <span class="close">&times;</span>
-                        <p>These are the rules</p>
-                    </div>
+            <h3>Welcome!</h3>
+            <p>This is a small quiz to test your knowledge about Guernsey. <br>Good luck!</p>
+            <!--Code taken from "How To Create a Modal Box" w3schools-->
+            <button id="myBtn" class="submit-btn">Rules</button>
+            <div id="rules-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>These are the rules</p>
                 </div>
-                <form action="quiz.html">
-                    <input type="submit" value="Start quiz" class="submit-btn">
-                </form>
-        </div>
-        <footer>
-            <div>
-                <p>Made by Sara Mathews</p>
             </div>
-        </footer>
+            <form action="quiz.html">
+                <input type="submit" value="Start quiz" class="submit-btn">
+            </form>
+        </div>
     </main>
+    <footer>
+        <div>
+            <p>Made by Sara Mathews</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
