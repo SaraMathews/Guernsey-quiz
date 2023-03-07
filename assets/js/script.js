@@ -194,6 +194,11 @@ function endQuiz() {
     document.getElementById("comment").innerHTML = "Oops..better luck next time!";
   }
   document.getElementById("check-answers").style.visibility = "visible";
+
+  let img =document.createElement("img");
+  img.src ="assets/images/guernsey.jpeg"
+  let src = document.getElementById("img");
+  src.appendChild(img)
 }
 
 //Open modal when rules btn is clicked
