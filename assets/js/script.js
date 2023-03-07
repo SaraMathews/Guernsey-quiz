@@ -137,7 +137,7 @@ let questionIndex = 0;
 displayQuestion();
 
 // Event listener submit button
-document.getElementById("submit").addEventListener("click", submitAnswer);
+document.getElementById("submit-answ").addEventListener("click", submitAnswer);
 
 // Function to display current question and answers
 function displayQuestion() {
@@ -163,20 +163,30 @@ function submitAnswer() {
   if (answer.correct) {
     document.getElementById("result");
     score++
+  } else {
+    document.getElementById("result");
+  }
+
+  //Move on to next question or end quiz if all the questions have been answered
+  questionIndex++;
+  if (questionIndex >= quizQuestions.length) {
+    endQuiz();
+  } else {
+    displayQuestion();
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
+// Function to end quiz and display final score and comments
+function endQuiz() {
+  document.getElementById("question").textContent = "Congratulations on completing the Guernsey Quiz!";
+  document.getElementById("answers").innerHTML = "You scored" + score + "out of" + quizQuestions.length + "questions";
+  document.getElementById("submit").style.display = "none";
+  if (score >= 5) {
+    document.getElementById("comment").innerHTML = "Good job, you are a Guernsey expert!";
+  } else {
+    document.getElementById("comment").innerHTML = "Oops..better luck next time!";
+  }
+}
 
 
 
