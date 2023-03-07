@@ -57,6 +57,7 @@ h3 {
     height: 500px;
     width: 750px;
     margin-top: 450px;
+    border-radius: 4px;
 }
 
 div>p {
@@ -145,6 +146,17 @@ text-align: left;
     #result, #end-text {
         font-size: 1.2rem;
     }
+
+/* Check answer list*/
+ol {
+    font-size: 1.5rem;
+   
+}
+
+ol li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 
 /* Footer style*/
 footer {

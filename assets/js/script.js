@@ -129,7 +129,6 @@ let quizQuestions = [{
 }
 ];
 
-
 let score = 0;
 let questionIndex = 0;
 
