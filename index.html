@@ -19,15 +19,20 @@
         <h2>Quiz</h2>
     </section>
     <main>
-        <!--Welcome form-->
+        <!--Welcome form with rules-->
         <div>
             <form action="quiz.html">
                 <h3>Welcome!</h3>
-                <p>This is a small quiz to test your knowledge about Guernsey. To start the quiz, please enter your first name and press "Start quiz". Good luck!</p>
-                <label for="name">Name</label>
-                <input type="text" id="name-input" required> 
-                <input type="submit" value="Start quiz" id="submit-btn">
+                <p>This is a small quiz to test your knowledge about Guernsey. Good luck!</p>
+                <input type="submit" value="Start quiz" class="submit-btn">
             </form>
+                <button id="rules-btn">Rules</button>
+                <div id="rules-modal">
+                    <div id="modal-content">
+                        <span class="close">&times;</span>
+                        <p>These are the rules</p>
+                    </div>
+                </div>
         </div>
         <footer>
             <div>
