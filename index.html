@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +13,7 @@
     <title>Guernsey Quiz</title>
     <script src="https://kit.fontawesome.com/c720821d05.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <!--Heading-->
     <section class="heading">
@@ -20,20 +22,20 @@
     </section>
     <main>
         <!--Welcome form with rules-->
-        <div>
-            <form action="quiz.html">
+        <div class="main-box">
+            <div action="quiz.html">
                 <h3>Welcome!</h3>
-                <p>This is a small quiz to test your knowledge about Guernsey. Good luck!</p>
-                <input type="submit" value="Start quiz" class="submit-btn">
-            </form>
-            <!--Code from "How To Create a Modal Box" w3schools-->
-                <button id="rules-btn">Rules</button>
+                <p>This is a small quiz to test your knowledge about Guernsey. <br>Good luck!</p>
+                <!--Code from "How To Create a Modal Box" w3schools-->
+                <button class="submit-btn" id="rules-btn">Rules</button>
                 <div id="rules-modal">
                     <div id="modal-content">
                         <span class="close">&times;</span>
                         <p>These are the rules</p>
                     </div>
                 </div>
+                <input type="submit" value="Start quiz" class="submit-btn">
+            </div>
         </div>
         <footer>
             <div>
@@ -42,4 +44,5 @@
         </footer>
     </main>
 </body>
+
 </html>
