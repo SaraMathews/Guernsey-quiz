@@ -195,8 +195,10 @@ function endQuiz() {
   }
   document.getElementById("check-answers").style.visibility = "visible";
 
-  let img =document.createElement("img");
-  img.src ="assets/images/guernsey.jpeg"
+  let img = document.createElement("img");
+  img.src ="assets/images/guernsey-town.jpeg"
   let src = document.getElementById("img");
-  src.appendChild(img)
+  img.style.height = "180px"
+  img.style.width = "300px"
+  src.appendChild(img);
 }
