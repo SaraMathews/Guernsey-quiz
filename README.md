@@ -1,10 +1,10 @@
 # **Guernsey Quiz** #
 # **Description** #
-This website consists of a quiz with questions about various subjects related to guernsey. 
-Its indended to give the user a deeper knowledge about guernsey in a fun and interacticve way. Its for anyone intrested in learning more about guernsey or to test thieir currwnt knowledge. 
+This website consists of a quiz with questions about various subjects related to Guernsey. 
+It's intended to give the user a deeper knowledge of Guernsey in a fun and interactive way. It's for anyone interested in learning more about Guernsey or for testing their current knowledge. 
 ## **Features**
 ### *Header*
-The logo bar consists of the website logo "Guernsey Hidden Gems" displayed next to a small diamond icon. The bar stretches to the full width of the page with the logo centerted in the middle. The logo bar is displayed on all pages underneath the navigation bar to provide consistency throughout the website. The purpose of the logo bar is to ensure that the user easily knows which website they are currently on. if the user wants to end the quiz he she can clicks on the logo it will take her him back to the welcome page. This function is implememted on all pages to make it user friendy. 
+The header consists of the logo "Guernsey Quiz" displayed next to a small diamond icon. The header stretches to the full width of the page with the logo centerted in the middle. The header is displayed on all pages to provide consistency throughout the website. The purpose of the header is to ensure that the user easily knows which website they are currently on. If the user wants to end the quiz, he/she can click on the logo and it will take them back to the welcome page. This function is implemented on all pages to make the website more user-friendly. 
 ### *Footer*
 The footer section is located on the bottom of all pages and displays the text "Made by Sara Mathews". This section displays who made the website and quiz, and provides an email address if the user wants to get in contact with the creator. 
 ### *Welcome page*
@@ -19,7 +19,7 @@ When the user has submitted the last question, the result page opens displaying 
 If the user got 5 or more correct answers an additional rewarding comment is displayed together with a smiley happy face underneath the users score. If the user gets fewer than 5 correct answers a different and encouraging comment is displayed under the user score. By immediately receiving the score with an appropriatle comment the user will be encouraged to either redo the quiz or perhaps consider visiting guernsey to explore the different subjects in the quiz. 
 On the result page, the user can opt to check all of the correct answers in the quiz by clicking the check answers button. 
 ### *Correct answer pages*
-On this page, all of the correct answers to the quiz are displayed in order. This will give the user correct information if he she got one or more answers wrong, but does not want to redo the quiz. 
+On this page, all of the correct answers to the quiz are displayed in order. This will give the user correct information if he she got one or More answers are wrong but I want to avoid redoing the quiz. 
 
 ### *Features left to implement*
 Add more styling to radio buttons 
