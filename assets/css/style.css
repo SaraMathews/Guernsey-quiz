@@ -56,9 +56,7 @@ a {
     transform: scale(1.1);
 }
 
-/* Welcome and rules box style */
-
-/* Welcome form style */
+/* Welcome box style */
 .main-box {
     background-color: #53423C;
     color: white;
@@ -93,7 +91,7 @@ div>p {
 }
 
 /* Modal style */
-/* Code from "How To Create a Modal Box" w3schools */
+/* Code copied from "How To Create a Modal Box" w3schools */
 .modal {
     display: none;
     position: fixed;
@@ -159,8 +157,7 @@ div>p {
     font-size: 1.2rem;
 }
 
-/* Check answer list*/
-
+/* Check answers list */
 .correct-box {
     background-color: #53423C;
     color: white;
@@ -187,8 +184,6 @@ div>p {
     text-align: left;
     padding-left: 15px;
 }
-
-
 
 /* Footer style*/
 footer {
