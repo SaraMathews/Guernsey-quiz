@@ -208,6 +208,7 @@ footer>div>p {
     .main-box {
         width: 400px;
     }
+
     .modal {
         width: 400px;
         margin-left: 20px;
@@ -218,6 +219,7 @@ footer>div>p {
     .main-box {
         width: 540px;
     }
+
     .modal {
         width: 540px;
         margin-left: 50px;
@@ -229,9 +231,9 @@ footer>div>p {
         width: 700px;
         height: 400px;
     }
+
     .modal {
         width: 700px;
         margin-left: 85px;
     }
 }
-
