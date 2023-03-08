@@ -182,7 +182,7 @@ function submitAnswer() {
 }
 
 /**
- * Function display final score and comments. Create and show smiley img if score>5
+ * Function display final score and comments. Create and show smiley img if score > 5
  */
 function endQuiz() {
   document.getElementById("question").textContent = "Congratulations on completing the Guernsey Quiz!";
