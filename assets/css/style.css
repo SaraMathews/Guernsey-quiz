@@ -30,8 +30,8 @@ h2 {
 }
 
 h3 {
-    margin-top: 50px;
     font-size: 1.7rem;
+    margin-top: 50px;
 }
 
 /* Header style */
@@ -142,7 +142,7 @@ div>p {
 /*Quiz area style*/
 #question {
     font-size: 1.7rem;
-    margin-top: 100px;
+    margin-top: 60px;
     margin-bottom: 40px;
 }
 
@@ -151,13 +151,12 @@ div>p {
     margin-bottom: 40px;
 }
 
-#result,
-#end-text {
-    font-size: 1.2rem;
+#result {
+    font-size: 1rem;
 }
 
-#img {
-    
+#comment {
+    font-size: 1.2rem;
 }
 
 /* Check answer list*/

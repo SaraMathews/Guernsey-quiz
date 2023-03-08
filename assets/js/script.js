@@ -1,132 +1,132 @@
 // Questions and answers
 let quizQuestions = [{
-  question: "1. What is the approximate population of Guernsey?",
-  answers: [{
-          text: "68 000",
-          correct: true
+    question: "1. What is the approximate population of Guernsey?",
+    answers: [{
+        text: "68 000",
+        correct: true
       },
       {
-          text: "52 000",
-          correct: false
+        text: "52 000",
+        correct: false
       },
       {
-          text: "37 000",
-          correct: false
+        text: "37 000",
+        correct: false
       },
-  ]
-},
-{
-  question: "2. How many parishes does Guernsey have?",
-  answers: [{
-          text: "5",
-          correct: false
-      },
-      {
-          text: "8",
-          correct: false
+    ]
+  },
+  {
+    question: "2. How many parishes does Guernsey have?",
+    answers: [{
+        text: "5",
+        correct: false
       },
       {
-          text: "10",
-          correct: true
-      },
-  ]
-},
-{
-  question: "3. Do car registrations in Guernsey have...",
-  answers: [{
-          text: "Numbers ans letters",
-          correct: false
+        text: "8",
+        correct: false
       },
       {
-          text: "Numbers only",
-          correct: true
+        text: "10",
+        correct: true
+      },
+    ]
+  },
+  {
+    question: "3. Do car registrations in Guernsey have...",
+    answers: [{
+        text: "Numbers ans letters",
+        correct: false
       },
       {
-          text: "Letters only",
-          correct: false
-      },
-  ]
-},
-{
-  question: "4. What did the Romans call Guernsey",
-  answers: [{
-          text: "Hispania",
-          correct: false
+        text: "Numbers only",
+        correct: true
       },
       {
-          text: "Ella",
-          correct: false
+        text: "Letters only",
+        correct: false
+      },
+    ]
+  },
+  {
+    question: "4. What did the Romans call Guernsey",
+    answers: [{
+        text: "Hispania",
+        correct: false
       },
       {
-          text: "Sarnia",
-          correct: true
-      },
-  ]
-},
-{
-  question: "5. What is the capital of Guernsey?",
-  answers: [{
-          text: "St Anne",
-          correct: false
+        text: "Ella",
+        correct: false
       },
       {
-          text: "St Peter Port",
-          correct: true
+        text: "Sarnia",
+        correct: true
+      },
+    ]
+  },
+  {
+    question: "5. What is the capital of Guernsey?",
+    answers: [{
+        text: "St Anne",
+        correct: false
       },
       {
-          text: "St Malo",
-          correct: false
-      },
-  ]
-},
-{
-  question: "6. What colour does the post boxes in Guernsey have?",
-  answers: [{
-          text: "Yellow",
-          correct: false
+        text: "St Peter Port",
+        correct: true
       },
       {
-          text: "Red",
-          correct: false
+        text: "St Malo",
+        correct: false
+      },
+    ]
+  },
+  {
+    question: "6. What colour does the post boxes in Guernsey have?",
+    answers: [{
+        text: "Yellow",
+        correct: false
       },
       {
-          text: "Blue",
-          correct: true
-      },
-  ]
-},
-{
-  question: "7. Which of the following is a Guernsey airline?",
-  answers: [{
-          text: "Ryan Air",
-          correct: false
+        text: "Red",
+        correct: false
       },
       {
-          text: "Easy Jet",
-          correct: false
+        text: "Blue",
+        correct: true
+      },
+    ]
+  },
+  {
+    question: "7. Which of the following is a Guernsey airline?",
+    answers: [{
+        text: "Ryan Air",
+        correct: false
       },
       {
-          text: "Aurigny",
-          correct: true
-      },
-  ]
-},
-{
-  question: "8. What day does Guernsey celebrate Liberation Day?",
-  answers: [{
-          text: "9th May",
-          correct: true
+        text: "Easy Jet",
+        correct: false
       },
       {
-          text: "1th May",
-          correct: false
+        text: "Aurigny",
+        correct: true
+      },
+    ]
+  },
+  {
+    question: "8. What day does Guernsey celebrate Liberation Day?",
+    answers: [{
+        text: "9th May",
+        correct: true
       },
       {
-          text: "6th May",
-          correct: false
+        text: "1th May",
+        correct: false
       },
-  ]
-}
+      {
+        text: "6th May",
+        correct: false
+      },
+    ]
+  }
 ];
 
 let score = 0;
@@ -143,21 +143,21 @@ document.getElementById("submit-answ").addEventListener("click", submitAnswer);
 
 /**
  * Function to display current question and answers
-*/ 
+ */
 function displayQuestion() {
-let question = quizQuestions[questionIndex];
-document.getElementById("question").textContent = question.question;
+  let question = quizQuestions[questionIndex];
+  document.getElementById("question").textContent = question.question;
 
-let quizAnswers = "";
-for (let i = 0; i < question.answers.length; i++) {
-  quizAnswers += "<div><input type='radio' name='answer' value='" + i + "'> " + question.answers[i].text + "</div>";
-}
-document.getElementById("answers").innerHTML = quizAnswers;
+  let quizAnswers = "";
+  for (let i = 0; i < question.answers.length; i++) {
+    quizAnswers += "<div><input type='radio' name='answer' value='" + i + "'> " + question.answers[i].text + "</div>";
+  }
+  document.getElementById("answers").innerHTML = quizAnswers;
 }
 
 /**
  * Function to submit answer, collect score, move on to next question or end quiz
-*/ 
+ */
 function submitAnswer() {
   let selectedAnswer = document.querySelector("input[name='answer']:checked");
   if (!selectedAnswer) {
@@ -182,8 +182,8 @@ function submitAnswer() {
 }
 
 /**
- * Function display final score and comments
-*/ 
+ * Function display final score and comments. Create and show smiley img if score>5
+ */
 function endQuiz() {
   document.getElementById("question").textContent = "Congratulations on completing the Guernsey Quiz!";
   document.getElementById("answers").innerHTML = "You scored " + score + " out of " + quizQuestions.length + " questions";
@@ -195,10 +195,17 @@ function endQuiz() {
   }
   document.getElementById("check-answers").style.visibility = "visible";
 
+  let src = document.getElementById("img-happy");
   let img = document.createElement("img");
-  img.src ="assets/images/guernsey-town.jpeg"
-  let src = document.getElementById("img");
-  img.style.height = "180px"
-  img.style.width = "300px"
+  img.src = "assets/images/happyface.png"
+  img.style.height = "50px"
+  img.style.width = "50px"
   src.appendChild(img);
+
+  if (score >= 5) {
+    document.getElementById("img-happy").style.visibility = "visible";
+  } else {
+    document.getElementById("img-happy").style.display = "none";
+  }
 }
+
