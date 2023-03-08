@@ -116,7 +116,7 @@ div>p {
 .close {
     color: #53423C;
     float: right;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .close:hover,
@@ -124,6 +124,10 @@ div>p {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+
+#h3-modal {
+    margin-top: 10px;
 }
 
 /* list style in modal */
@@ -204,23 +208,19 @@ footer>div>p {
 
 /* Media queries */
 @media screen and (min-width: 530px) {
-    .main-box {
+    .main-box, .modal, .correct-box{
         width: 400px;
     }
-
     .modal {
-        width: 400px;
         margin-left: 20px;
     }
 }
 
 @media screen and (min-width: 630px) {
-    .main-box {
+    .main-box, .modal, .correct-box {
         width: 540px;
     }
-
     .modal {
-        width: 540px;
         margin-left: 50px;
     }
 }
@@ -230,7 +230,6 @@ footer>div>p {
         width: 700px;
         height: 400px;
     }
-
     .modal {
         width: 700px;
         margin-left: 85px;
