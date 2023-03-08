@@ -168,7 +168,7 @@ function submitAnswer() {
   let answer = quizQuestions[questionIndex].answers[answerIndex];
   if (answer.correct) {
     document.getElementById("result");
-    score++
+    score++;
   } else {
     document.getElementById("result");
   }
@@ -197,9 +197,9 @@ function endQuiz() {
 
   let src = document.getElementById("img-happy");
   let img = document.createElement("img");
-  img.src = "assets/images/happyface.png"
-  img.style.height = "50px"
-  img.style.width = "50px"
+  img.src = "assets/images/happyface.png";
+  img.style.height = "50px";
+  img.style.width = "50px";
   src.appendChild(img);
 
   if (score >= 5) {
