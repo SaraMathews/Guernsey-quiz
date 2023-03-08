@@ -2,6 +2,8 @@
 # **Description** #
 This website consists of a quiz with questions about various subjects related to Guernsey. 
 It's intended to give the user a deeper knowledge of Guernsey in a fun and interactive way. It's for anyone who is interested in learning more about Guernsey or testing their current knowledge of the island.
+
+![Description image of different devices](docs/description.png)
 ## **Features**
 ### *Header*
 The header consists of the logo "Guernsey Quiz" displayed next to a small diamond icon. The header stretches to the full width of the page with the logo centered in the middle. The header is displayed on all pages to provide consistency throughout the website. The purpose of the header is to ensure that the user easily knows which website they are currently on. If the user wants to end the quiz, they can click on the logo, which will take them back to the welcome page. This function is implemented on all pages to make the website more user-friendly. 

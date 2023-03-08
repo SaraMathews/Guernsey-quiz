@@ -208,18 +208,26 @@ footer>div>p {
 
 /* Media queries */
 @media screen and (min-width: 530px) {
-    .main-box, .modal, .correct-box{
+
+    .main-box,
+    .modal,
+    .correct-box {
         width: 400px;
     }
+
     .modal {
         margin-left: 20px;
     }
 }
 
 @media screen and (min-width: 630px) {
-    .main-box, .modal, .correct-box {
+
+    .main-box,
+    .modal,
+    .correct-box {
         width: 540px;
     }
+
     .modal {
         margin-left: 50px;
     }
@@ -230,6 +238,7 @@ footer>div>p {
         width: 700px;
         height: 400px;
     }
+
     .modal {
         width: 700px;
         margin-left: 85px;
