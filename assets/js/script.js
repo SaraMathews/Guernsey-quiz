@@ -208,4 +208,3 @@ function endQuiz() {
     document.getElementById("img-happy").style.display = "none";
   }
 }
-

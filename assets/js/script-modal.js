@@ -1,4 +1,6 @@
+//Code taken from "How To Create a Modal Box" w3schools
 //Open modal when rules btn is clicked
+
 // Gets id's and classes from the dom
 let modal = document.getElementById("rules-modal");
 let btn = document.getElementById("myBtn");
