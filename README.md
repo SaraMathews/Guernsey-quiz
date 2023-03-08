@@ -21,6 +21,10 @@ On the result page, the user can opt to check all of the correct answers in the 
 ### *Correct answer pages*
 On this page, all of the correct answers to the quiz are displayed in order. This will give the user correct information if he she got one or more answers wrong, but does not want to redo the quiz. 
 
+### *Features left to implement*
+Add more styling to radio buttons 
+On the check answer page 
+
 ## **Testing**
  ### *Unfixed bugs*
  ## **Deployment**
@@ -32,12 +36,12 @@ The git commands below were used throughout development to push code to the remo
 
 ### *Deployment to Github Pages*
 The steps below were followed to deploy the site to GitHub pages:
-- In the GitHub repository for hidden-gems-guernsey, navigate to the "Settings" tab
+- In the GitHub repository for guernsey-quiz, navigate to the "Settings" tab
 - Under the "Code and automation" section on the left-hand side menu, select "Pages"
 -  From the source section drop-down menu, select the "main" branch and click "Save"
 - The page will automatically refresh, and a live link will be displayed on the top of the "GitHub Section," indicating a successful deployment
 
-The live link can be found here- https://saramathews.github.io/hidden-gems-guernsey/
+The live link can be found here- 
 
 ### *Clone the Repository from GitHub*
 The steps below were followed to clone the repository locally  
