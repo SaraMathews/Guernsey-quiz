@@ -60,6 +60,7 @@ It's intended to give the user a deeper knowledge of Guernsey in a fun and inter
 ## **Testing**
 - The Lighthouse accessibility score on "Quiz pages" displays the comment "Form elements do not have associated labels" which brings the accessibility score down to 85%. I did not have time to find a way to add labels successfully to the radio buttons in script.js. So this is something to add in the future to bring the accessibility score up. 
 
+![Image of testing results](docs/testing-guernsey-quiz.png)
  ### *Unfixed bugs*
  - The "Result page" main box, which displays the smiley icon (if the score is >=5), is not responsive on screen sizes below 530px. I don't know how to adjust the box size on the result page without adjusting all other pages with the class "main box". I did not have time to look into this bug in more depth. 
  ## **Deployment**
@@ -91,7 +92,6 @@ The steps below were followed to clone the repository locally
 - "How to create a Modal box" (copied code) https://www.w3schools.com/howto/howto_css_modals.asp
 - How to add an image in HTML via JavaScript (partially copied code) https://linuxhint.com/add-image-in-html-via-javascript/
 - "Change image size with JavaScript" (inspired by) https://stackoverflow.com/questions/1297449/change-image-size-with-javascript
--  "Form <input> elements must have labels" (inspired by) https://dequeuniversity.com/rules/axe/4.4/label?utm_source=lighthouse&utm_medium=lr
 - How to add a favicon was taken from the Love Math module
 - Inspiration was taken from the JavaScript Essentials module in LMS
 - Inspiration was taken from browsing different Code Institute channels in Slack
