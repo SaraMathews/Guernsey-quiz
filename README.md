@@ -83,7 +83,8 @@ The steps below were followed to clone the repository locally
 - How to add an image in HTML via JavaScript (partially copied code) https://linuxhint.com/add-image-in-html-via-javascript/
 - Change image size with JavaScript (inspired by) https://stackoverflow.com/questions/1297449/change-image-size-with-javascript
 - How to add a favicon was taken from the Love Math module
-- A lot of inspiration was taken from the JavaScript Essentials module in LMS
+- Inspiration was taken from the JavaScript Essentials module in LMS
+- Inspiration was taken from browsing different Code Institute channels in Slack
 - The questions were written together with my mother-in-law, who lives in Guernsey
 - The color scheme and some of the layout was taken from my last project, Hidden Gem's Guernsey. 
 

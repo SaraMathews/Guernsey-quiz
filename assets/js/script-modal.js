@@ -1,4 +1,4 @@
-//Code copied from "How To Create a Modal Box" w3schools
+//Code copied from "How To Create a Modal Box" w3schools (link to source in README - credits)
 //Open modal when rules btn is clicked
 
 // Gets id's and classes from the dom
