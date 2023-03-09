@@ -52,7 +52,7 @@ On this page, all the correct answers for the quiz questions are displayed in or
 - The Lighthouse accessibility score on "Quiz pages" displays the comment "Form elements do not have associated labels" which brings the accessibility score down to 85%. I did not have time to find a way to add labels successfully to the radio buttons in script.js. So this is something to add in the future to bring the accessibility score up. 
 
  ### *Unfixed bugs*
- - The "Result page" main box, which displays the smiley icon (if the score is <5), is not responsive on screen sizes below 530px. I don't know how to adjust the box size on the result page without adjusting all other pages with the class "main box". I did not have time to look into this bug in more depth. 
+ - The "Result page" main box, which displays the smiley icon (if the score is >=5), is not responsive on screen sizes below 530px. I don't know how to adjust the box size on the result page without adjusting all other pages with the class "main box". I did not have time to look into this bug in more depth. 
  ## **Deployment**
  ### *Version Control*
 The git commands below were used throughout development to push code to the remote repository in GitHub:
