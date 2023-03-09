@@ -150,7 +150,7 @@ function displayQuestion() {
 
   let quizAnswers = "";
   for (let i = 0; i < question.answers.length; i++) {
-    quizAnswers += "<div><input type='radio' name='answer' value='" + i + "'>" + question.answers[i].text + "</div>";
+    quizAnswers += "<div><label for='radio-btn'><input id='radio-btn' type='radio' name='answer' value='" + i + "'></label>" + question.answers[i].text + "</div>";
   }
   document.getElementById("answers").innerHTML = quizAnswers;
 }
