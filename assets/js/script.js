@@ -195,6 +195,7 @@ function endQuiz() {
   }
   document.getElementById("check-answers").style.visibility = "visible";
 
+  // Partially copied code (link to source in README - credits)
   let src = document.getElementById("img-happy");
   let img = document.createElement("img");
   img.src = "assets/images/happyface.png";
