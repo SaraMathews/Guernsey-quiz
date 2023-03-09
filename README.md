@@ -87,10 +87,11 @@ The steps below were followed to clone the repository locally
 
 ## **Credits**
 ### *Content*
-- Hide a button in Javascript (inspired by) https://stackoverflow.com/questions/17630945/is-there-an-opposite-to-displaynone#:~:text=display%3A%20none%20doesn't%20have,are%20opposite%20to%20each%20other  
-- How To Create a Modal Box (copied code) https://www.w3schools.com/howto/howto_css_modals.asp
+- "Hide a button in Javascript" (inspired by) https://stackoverflow.com/questions/17630945/is-there-an-opposite-to-displaynone#:~:text=display%3A%20none%20doesn't%20have,are%20opposite%20to%20each%20other  
+- "How to create a Modal box" (copied code) https://www.w3schools.com/howto/howto_css_modals.asp
 - How to add an image in HTML via JavaScript (partially copied code) https://linuxhint.com/add-image-in-html-via-javascript/
-- Change image size with JavaScript (inspired by) https://stackoverflow.com/questions/1297449/change-image-size-with-javascript
+- "Change image size with JavaScript" (inspired by) https://stackoverflow.com/questions/1297449/change-image-size-with-javascript
+-  "Form <input> elements must have labels" (inspired by) https://dequeuniversity.com/rules/axe/4.4/label?utm_source=lighthouse&utm_medium=lr
 - How to add a favicon was taken from the Love Math module
 - Inspiration was taken from the JavaScript Essentials module in LMS
 - Inspiration was taken from browsing different Code Institute channels in Slack
