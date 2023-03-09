@@ -34,7 +34,7 @@ let quizQuestions = [{
   {
     question: "3. Do car registrations in Guernsey have...",
     answers: [{
-        text: "Numbers ans letters",
+        text: "Numbers and letters",
         correct: false
       },
       {
@@ -150,7 +150,7 @@ function displayQuestion() {
 
   let quizAnswers = "";
   for (let i = 0; i < question.answers.length; i++) {
-    quizAnswers += "<div><input type='radio' name='answer' value='" + i + "'> " + question.answers[i].text + "</div>";
+    quizAnswers += "<div><input type='radio' name='answer' value='" + i + "'>" + question.answers[i].text + "</div>";
   }
   document.getElementById("answers").innerHTML = quizAnswers;
 }
